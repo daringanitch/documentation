@@ -11,7 +11,7 @@ phases:
      - npm build
  post_build:
    commands:
-     - aws s3 cp . s3://cloudops-repo.spehosting-ext.com 
+     - aws s3 cp --recursive --acl public-read  . s3://cloudops-repo.spehosting-ext.com 
  post_build:
    commands:
      - echo "post_build step"
