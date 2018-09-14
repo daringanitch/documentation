@@ -8,10 +8,10 @@ phases:
      - echo "pre_build step"
  build:
    commands:
-     - npm build
+     - aws s3 cp --recursive   . "s3://cloudops-repo.spehosting-ext.com" --acl public-read
  post_build:
    commands:
-     - aws s3 cp --recursive   . "s3://cloudops-repo.spehosting-ext.com" --acl public-read 
+      - echo "build step" 
  post_build:
    commands:
      - echo "post_build step"
