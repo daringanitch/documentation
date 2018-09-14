@@ -8,7 +8,7 @@ phases:
      - echo "pre_build step"
  build:
    commands:
-     - aws s3 sync --delete . "s3://cloud-ops-docs-repo2"
+     - aws s3 sync --delete . "s3://cloudops-repo.spehosting-ext.com"
  post_build:
    commands:
      - echo "post_build step"
