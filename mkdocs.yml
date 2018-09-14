@@ -1,4 +1,4 @@
-site_name: Cloud Ops Document Repo 2
+site_name: Cloud Ops Document Repo 
 nav:
     - Home: index.md
     - About: about.md
