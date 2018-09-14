@@ -11,5 +11,5 @@ phases:
      aws s3 cp --recursive  . "s3://cloudops-repo.spehosting-ext.com" --acl public-read
  artifacts:
   type: zip
-   files:
+  files:
      - ./index.html
