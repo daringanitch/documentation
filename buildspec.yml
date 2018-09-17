@@ -1,6 +1,18 @@
-build:
+version: 0.2
+phases:
+ install:
    commands:
-     - npm build
+     - echo "install step"
+ pre_build:
+   commands:
+     - echo "pre_build step"
+ build:
+   commands:    
+     - aws s3 cp --recursive  . s3://cloudops-repo.spehosting-ext.com
  post_build:
    commands:
-     - aws s3 sync --delete . "s3://cloudops-repo.spehosting-ext.com>"
+     - echo "post_build step"
+artifacts:
+   type: zip
+   files:
+     - ./index.html
