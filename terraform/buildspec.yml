@@ -7,8 +7,7 @@ phases:
    commands:
      - echo "pre_build step"
  build:
-   commands:
-     - aws s3 rm s3://your-s3-bucket --recursive 
+   commands: 
      - aws s3 cp --recursive  . s3://your-s3-bucket 
  post_build:
    commands:
