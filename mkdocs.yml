@@ -1,5 +1,7 @@
-site_name: Cloud Ops Document Repo 2
+site_name: Cloud Ops Document Repo
+
 nav:
     - Home: index.md
-    - About: about.md
+    - Markdown Primer: markdown-primer.md
+    - Kickass README: Kissass-README.md
 theme: readthedocs
